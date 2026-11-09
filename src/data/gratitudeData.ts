@@ -1,4 +1,5 @@
 import { GratitudeReason, MemoryMoment, PersonalizationData } from '../types.ts';
+import heroCafeLatte from '../assets/images/hero_cafe_latte_warmth_1794219996412.jpg';
 
 export const DEFAULT_PERSONALIZATION: PersonalizationData = {
   recipientName: 'Papa Ciao',
@@ -18,7 +19,7 @@ export const DEFAULT_PERSONALIZATION: PersonalizationData = {
 
 export const SINGLE_MOMENT: MemoryMoment = {
   id: 'moment-1',
-  image: '/src/assets/images/hero_cafe_latte_warmth_1794219996412.jpg',
+  image: heroCafeLatte,
   title: 'Thank You',
   caption: 'With endless warmth and gratitude for your generosity.',
   location: 'Café Latte Warmth',
