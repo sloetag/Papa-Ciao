@@ -1,0 +1,6 @@
+{
+  "name": "Gratitude · Café Latte Thank You Experience",
+  "description": "An intimate, interactive Thank You landing page crafted in warm café latte and taupe transitions with keepsake moments and audio warmth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

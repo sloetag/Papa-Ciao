@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Saucer -->
+  <ellipse cx="32" cy="52" rx="26" ry="6" fill="#C4B199" />
+  <ellipse cx="32" cy="51" rx="23" ry="4.5" fill="#DFD3C2" />
+
+  <!-- Cup Handle -->
+  <path d="M42 28 C52 28, 52 44, 42 44" stroke="#D5C8B8" stroke-width="5" stroke-linecap="round" fill="none" />
+
+  <!-- Ceramic Cup Body -->
+  <path d="M14 24 C14 46, 20 48, 32 48 C44 48, 50 46, 50 24 Z" fill="#FAF8F5" />
+  <path d="M14 24 C14 46, 20 48, 32 48 C44 48, 50 46, 50 24 Z" fill="url(#ceramicShade)" />
+
+  <!-- Cup Rim (Top ellipse) -->
+  <ellipse cx="32" cy="24" rx="18" ry="7" fill="#ECE5DB" stroke="#D5C8B8" stroke-width="1.5" />
+
+  <!-- Espresso Crema Surface -->
+  <ellipse cx="32" cy="24" rx="16" ry="5.5" fill="url(#espressoCrema)" />
+
+  <!-- Steamed Milk Crema Outer Ring -->
+  <ellipse cx="32" cy="24" rx="14" ry="4.5" fill="none" stroke="#A87A51" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Latte Art Heart -->
+  <path d="M32 27 C30 25.5, 27 24, 27 22.5 C27 21.2, 28.2 20.2, 29.5 20.2 C30.6 20.2, 31.5 20.9, 32 21.6 C32.5 20.9, 33.4 20.2, 34.5 20.2 C35.8 20.2, 37 21.2, 37 22.5 C37 24, 34 25.5, 32 27 Z" fill="#FFFDF8" />
+
+  <!-- Rising Steam Curlets -->
+  <path d="M26 15 Q24 10, 27 6" stroke="#BAAA99" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+  <path d="M33 14 Q36 9, 33 4" stroke="#BAAA99" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+  <path d="M39 16 Q37 11, 40 7" stroke="#BAAA99" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+
+  <defs>
+    <!-- Ceramic gradient shading -->
+    <linearGradient id="ceramicShade" x1="14" y1="24" x2="50" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="0.5" stop-color="#FAF8F5" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#D5C8B8" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Rich roasted espresso crema gradient -->
+    <radialGradient id="espressoCrema" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 24) scale(16 5.5)">
+      <stop offset="0.2" stop-color="#845D3E" />
+      <stop offset="0.75" stop-color="#5C3B22" />
+      <stop offset="1" stop-color="#3F2513" />
+    </radialGradient>
+  </defs>
+</svg>

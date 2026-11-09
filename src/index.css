@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-foam: #FAF8F5;
+  --color-cream: #F5F1EB;
+  --color-oat: #ECE5DB;
+  --color-taupe-100: #E4DBD0;
+  --color-taupe-200: #D5C8B8;
+  --color-taupe-300: #C2B3A1;
+  --color-taupe-400: #A89783;
+  --color-taupe-500: #8C7B68;
+  --color-mocha: #5A4B3E;
+  --color-roast: #3B2F26;
+  --color-espresso: #231C16;
+  --color-bronze: #B8976C;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--color-foam);
+  color: var(--color-espresso);
+  font-family: var(--font-sans);
+  transition: background-color 700ms cubic-bezier(0.16, 1, 0.3, 1), color 700ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.theme-morning {
+  --color-foam: #FAF8F5;
+  --color-cream: #F5F1EB;
+  --color-oat: #ECE5DB;
+  --color-taupe-100: #E4DBD0;
+  --color-taupe-200: #D5C8B8;
+  --color-taupe-300: #C2B3A1;
+  --color-taupe-400: #A89783;
+  --color-taupe-500: #8C7B68;
+  --color-mocha: #5A4B3E;
+  --color-roast: #3B2F26;
+  --color-espresso: #231C16;
+  --color-bronze: #B8976C;
+}
+
+body.theme-latte {
+  --color-foam: #F6F1EA;
+  --color-cream: #EFE6D9;
+  --color-oat: #E1D3BF;
+  --color-taupe-100: #D4C3AB;
+  --color-taupe-200: #C2AE94;
+  --color-taupe-300: #A58F72;
+  --color-taupe-400: #8B7457;
+  --color-taupe-500: #6F5B41;
+  --color-mocha: #4B3C29;
+  --color-roast: #302417;
+  --color-espresso: #1A120A;
+  --color-bronze: #C4985B;
+}
+
+body.theme-dusk {
+  --color-foam: #1C1713;
+  --color-cream: #261F1A;
+  --color-oat: #332A23;
+  --color-taupe-100: #42362E;
+  --color-taupe-200: #58493E;
+  --color-taupe-300: #7E6B5B;
+  --color-taupe-400: #AC9783;
+  --color-taupe-500: #CDBBA7;
+  --color-mocha: #E6D7C7;
+  --color-roast: #F2E8DC;
+  --color-espresso: #FAF6F0;
+  --color-bronze: #DBB072;
+}
+
+::selection {
+  background-color: var(--color-taupe-200);
+  color: var(--color-espresso);
+}
+
+/* Print Styles for Keepsake Letter */
+@media print {
+  header,
+  footer,
+  .no-print,
+  button,
+  [aria-label="Back to top"] {
+    display: none !important;
+  }
+
+  body, html {
+    background: #FFFFFF !important;
+    color: #1A120A !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Unconstrain scroll height so all letter paragraphs print seamlessly */
+  .overflow-y-auto,
+  [class*="max-h-"] {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  /* Remove heavy screen shadows on cards during print */
+  [class*="shadow-"] {
+    box-shadow: none !important;
+  }
+
+  /* Clean print framing */
+  .border-taupe-200 {
+    border-color: #D5C8B8 !important;
+  }
+}
+
+/* Subtle organic paper texture overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(74, 59, 50, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar for minimalist editorial feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-foam);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-taupe-200);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-taupe-400);
+}
+
