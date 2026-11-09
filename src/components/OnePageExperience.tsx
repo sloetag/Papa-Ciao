@@ -93,7 +93,7 @@ export const OnePageExperience: React.FC<OnePageExperienceProps> = ({
                 className="absolute top-4 left-4 flex items-center gap-2 text-[11px] font-sans uppercase tracking-widest text-foam/90 backdrop-blur-md bg-espresso/40 px-3 py-1.5 rounded-full border border-foam/15"
               >
                 <Sparkles className="w-3 h-3 text-[#E8C28A]" />
-                <span>For Papa Ciao</span>
+                <span>To Papa Ciao</span>
               </motion.div>
 
               {/* Prominent Editorial 'Thank You' Caption */}
