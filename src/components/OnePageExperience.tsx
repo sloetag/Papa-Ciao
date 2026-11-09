@@ -105,7 +105,7 @@ export const OnePageExperience: React.FC<OnePageExperienceProps> = ({
               >
                 <div className="backdrop-blur-md bg-espresso/60 p-4 sm:p-5 rounded-2xl border border-foam/15 space-y-1">
                   <div className="flex items-center gap-2 text-xs font-sans uppercase tracking-[0.2em] text-[#E8C28A] font-medium">
-                    <span>A Dedicated Tribute</span>
+                    <span></span>
                   </div>
                   <h3 className="font-serif italic text-2xl sm:text-3xl text-foam font-normal tracking-tight">
                     Thank You
